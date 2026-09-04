@@ -1,0 +1,24 @@
+.guide-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.guide-page section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.guide-page h2 {
+  margin: 0;
+}
+
+.guide-page p {
+  margin: 0;
+  line-height: 1.5;
+}

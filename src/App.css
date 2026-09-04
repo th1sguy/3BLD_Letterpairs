@@ -1,0 +1,40 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 32px 16px;
+  text-align: center;
+}
+
+.mode-nav {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mode-nav button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: transparent;
+  cursor: pointer;
+}
+
+.mode-nav button.active {
+  background: #1d4ed8;
+  color: #fff;
+  border-color: #1d4ed8;
+}
+
+.mode-nav button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.hint {
+  color: var(--text);
+  font-size: 14px;
+}

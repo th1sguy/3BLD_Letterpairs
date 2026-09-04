@@ -1,0 +1,34 @@
+.pair-heatmap-wrap {
+  max-width: 100%;
+  max-height: 480px;
+  overflow: auto;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.pair-heatmap {
+  border-collapse: collapse;
+}
+
+.pair-heatmap th {
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  font-size: 12px;
+  padding: 2px;
+  z-index: 1;
+}
+
+.pair-heatmap tbody th {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+}
+
+.pair-heatmap-cell {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}

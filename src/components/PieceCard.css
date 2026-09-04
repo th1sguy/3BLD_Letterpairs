@@ -1,0 +1,38 @@
+.piece-card {
+  display: grid;
+  margin: 0 auto;
+}
+
+.piece-main {
+  grid-row: 2;
+  grid-column: 2;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  border-radius: 4px;
+  outline: 3px solid #ffffff;
+  box-shadow: 0 0 0 5px #1d4ed8;
+}
+
+.piece-strip {
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  border-radius: 3px;
+}
+
+.piece-strip--top {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.piece-strip--right {
+  grid-row: 2;
+  grid-column: 3;
+}
+
+.piece-strip--bottom {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.piece-strip--left {
+  grid-row: 2;
+  grid-column: 1;
+}

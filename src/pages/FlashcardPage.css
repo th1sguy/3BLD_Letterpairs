@@ -1,0 +1,156 @@
+.flashcard-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 520px;
+}
+
+.filters {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.direction-toggle {
+  display: flex;
+  gap: 6px;
+}
+
+.row-filter {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.direction-toggle button.active {
+  background: #1d4ed8;
+  color: #fff;
+  border-color: #1d4ed8;
+}
+
+.score {
+  font-size: 14px;
+}
+
+/* A literal white index card, fixed size on both the prompt and answer side, with any
+   overflow (a long note, a tall image) scrolling inside it rather than resizing the card.
+   Theme tokens are pinned to their light values so descendants (piece labels, image
+   border) stay legible against the white background even when the app is in dark mode. */
+.flashcard-card {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --border: #e5e4e7;
+  width: 460px;
+  max-width: 100%;
+  height: 460px;
+  background: #fff;
+  color: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  overflow-y: auto;
+}
+
+.pair-key-display {
+  font-size: 72px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+.mnemonic-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.recall-word {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.recall-notes {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+.recall-image {
+  max-width: 220px;
+  max-height: 140px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.flashcard-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.show-answer {
+  padding: 10px 20px;
+}
+
+.self-grade {
+  display: flex;
+  gap: 12px;
+}
+
+.self-grade-btn--knew.active {
+  background: #16a34a;
+  border-color: #16a34a;
+  color: #fff;
+}
+
+.self-grade-btn--didnt.active {
+  background: #dc2626;
+  border-color: #dc2626;
+  color: #fff;
+}
+
+.answer-form input {
+  width: 80px;
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.feedback {
+  font-weight: 600;
+  margin: 0;
+}
+
+.feedback--correct {
+  color: #16a34a;
+}
+
+.feedback--wrong {
+  color: #dc2626;
+}
+
+.feedback-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.elapsed {
+  font-size: 13px;
+  color: var(--text);
+}
