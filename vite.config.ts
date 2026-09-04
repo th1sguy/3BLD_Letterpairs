@@ -3,6 +3,6 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/BldLetterPairs/',
+  base: '/3BLD_Letterpairs/',
   plugins: [react()],
 })
